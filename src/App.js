@@ -7,6 +7,7 @@ import Homepage from './Component/Fungsional/HomePage';
 import AboutComp from './Component/Fungsional/AboutComp';
 import DetailComp from './Component/Fungsional/DetailComp';
 import ListComp from './Component/Fungsional/DetailComp';
+import TambahComp from './Component/Class/CSS/TambahComp';
 import { Form } from 'reactstrap';
 //import logo from './logo.svg';
 //import Home from './Component/Fungsional/Home';
@@ -21,7 +22,7 @@ const App = () => {
       <Route exact path="/" component={Homepage}/>
       <Route exact path="/about" component={AboutComp}/>
       <Route exact path="/mahasiswa" component={ListComp}/>
-
+      <Route exact path="/mahasiswa/tambah" component={TambahComp}/>
       <Route exact path="/detail/:id" component={DetailComp}/>
 
       </Switch>
